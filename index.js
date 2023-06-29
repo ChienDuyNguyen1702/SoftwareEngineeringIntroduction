@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const sha256 = require('sha256');
 
-const port = process.env.PORT ? process.env.PORT : 3000;
+const port = process.env.PORT ? process.env.PORT : 8080;
 
 mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
