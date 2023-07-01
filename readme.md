@@ -1,4 +1,4 @@
-# Covid-19 Management System
+<!-- # Covid-19 Management System
 
 ## _Hệ thống quản lý dịch tễ Covid-19 trên địa bàn by Covid Hub Team_
   [![NPM Version][npm-image]][npm-url]
@@ -85,4 +85,33 @@ Ok goy done nha (❁´◡`❁)
 [npm-url]: https://npmjs.org/package/express
 [MongoDB]: https://www.mongodb.com/
 [coveralls-url]: https://coveralls.io/r/expressjs/express?branch=master
-[socketio]: https://socket.io/
+[socketio]: https://socket.io/ -->
+
+
+
+#  Hello các bạn
+mình sẽ hướng dẫn luồng xử lý cho từng cá nhân, sau đây là nội dung hướng dẫn cũng như các yêu cầu về project
+1. [Điều kiện để chạy được project](#requirement)
+2. [Luồng git](#gitflow)
+3. [sau khi fix](#fixed )
+
+
+## 1. Điều kiện để chạy được project<div id='requirement'></div>
+đầu tiên phải cần tải docker về máy để chạy được thử project
+Tải docker thì mọi người có thể xem ở bất cứ đâu
+## 2. Luồng git<div id='gitflow'></div>
+- Sau khi tải docker, thực hiện câu lệnh git clone từ main của prj theo nhánh K64 repo của Chiến về
+`git clone link --branch K64 --single-branch`
+- tạo nhánh riêng cho mình ở máy của cá nhân
+`git checkout -b <tên nhánh>`
+tên nhánh yêu cầu Tên_sửa_phần_nào, Eng Vne Jpn đều được,
+- <b>Thực hiện công việc cần làm của mình</b>
+- Sau khi chỉnh sửa thông tin, chỉ cần CTRL+S để save lại rồi ra browser F5 hay refresh lại là được
+- Sau khi hoàn thành công việc của mình, thực hiện add và commit
+`git add . `
+`git commit -m "Tên của commit"`
+
+- Yêu cầu tên commit phải miêu tả rõ được việc đã làm
+`git push -u origin <tên nhánh>`
+## Third Example <div id='fixed'></div>
+- sau khi push, nhớ lên link git của mình để xem tạo branch chưa, rồi liên hệ với Chiến để review qua
