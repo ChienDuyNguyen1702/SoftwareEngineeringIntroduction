@@ -101,7 +101,7 @@ mình sẽ hướng dẫn luồng xử lý cho từng cá nhân, sau đây là n
 Tải docker thì mọi người có thể xem ở bất cứ đâu
 ## 2. Luồng git<div id='gitflow'></div>
 - Sau khi tải docker, thực hiện câu lệnh git clone từ main của prj theo nhánh K64 repo của Chiến về
-`git clone link --branch K64 --single-branch`
+`git clone https://github.com/ChienDuyNguyen1702/SoftwareEngineeringIntroduction.git --branch K64 --single-branch`
 - tạo nhánh riêng cho mình ở máy của cá nhân, và để ý luôn thực hiện trên nhánh ấy của mình
 `git checkout -b <tên nhánh>`
 tên nhánh yêu cầu Tên_sửa_phần_nào, Eng Vne Jpn đều được,
@@ -115,7 +115,6 @@ tên nhánh yêu cầu Tên_sửa_phần_nào, Eng Vne Jpn đều được,
   - Lần đầu push thì dùng câu lệnh thêm `-u` như dưới
     `git push -u origin <tên nhánh>`
   - những lần khác chỉ cần `git push`
-- Để ý xem nhóm trưởng nhắc pull code như nào, nếu có nhắc pull, thực hiện:
-`git pull origin main`
+- Để ý xem nhóm trưởng nhắc pull code như nào, nếu có nhắc pull, trước tiên cần check xem nhánh ở máy tính cá nhân mình có phải nhánh của mình không, rồi thực hiện: `git pull origin main`
 ## Third Example <div id='fixed'></div>
 - sau khi push, nhớ lên link git của mình để xem tạo branch chưa, rồi liên hệ vào nhóm với Chiến để cập nhật tiến độ công việc
