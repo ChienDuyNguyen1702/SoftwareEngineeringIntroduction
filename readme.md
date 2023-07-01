@@ -102,16 +102,20 @@ Tải docker thì mọi người có thể xem ở bất cứ đâu
 ## 2. Luồng git<div id='gitflow'></div>
 - Sau khi tải docker, thực hiện câu lệnh git clone từ main của prj theo nhánh K64 repo của Chiến về
 `git clone link --branch K64 --single-branch`
-- tạo nhánh riêng cho mình ở máy của cá nhân
+- tạo nhánh riêng cho mình ở máy của cá nhân, và để ý luôn thực hiện trên nhánh ấy của mình
 `git checkout -b <tên nhánh>`
 tên nhánh yêu cầu Tên_sửa_phần_nào, Eng Vne Jpn đều được,
-- <b>Thực hiện công việc cần làm của mình</b>
+- <b>Thực hiện công việc cần làm của mình</b>, những phần không phải của mình thì đừng thay đổi gì nhé
 - Sau khi chỉnh sửa thông tin, chỉ cần CTRL+S để save lại rồi ra browser F5 hay refresh lại là được
 - Sau khi hoàn thành công việc của mình, thực hiện add và commit
 `git add . `
 `git commit -m "Tên của commit"`
-
 - Yêu cầu tên commit phải miêu tả rõ được việc đã làm
-`git push -u origin <tên nhánh>`
+- Sau đó push lên repo, sẽ có 2 trường hợp
+  - Lần đầu push thì dùng câu lệnh thêm `-u` như dưới
+    `git push -u origin <tên nhánh>`
+  - những lần khác chỉ cần `git push`
+- Để ý xem nhóm trưởng nhắc pull code như nào, nếu có nhắc pull, thực hiện:
+`git pull origin main`
 ## Third Example <div id='fixed'></div>
-- sau khi push, nhớ lên link git của mình để xem tạo branch chưa, rồi liên hệ với Chiến để review qua
+- sau khi push, nhớ lên link git của mình để xem tạo branch chưa, rồi liên hệ vào nhóm với Chiến để cập nhật tiến độ công việc
