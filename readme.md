@@ -6,7 +6,7 @@ mình sẽ hướng dẫn luồng xử lý cho từng cá nhân, sau đây là n
 
 
 ## 1. Điều kiện để chạy được project<div id='requirement'></div>
-đầu tiên phải cần tải docker về máy để chạy được thử project
+đầu tiên phải cần tải docker về máy để chạy được thử project<br>
 Tải docker thì mọi người có thể xem ở bất cứ đâu
 ## 2. Luồng git<div id='gitflow'></div>
 - Sau khi tải docker, thực hiện câu lệnh git clone từ main của prj theo nhánh K64 repo của Chiến về<br>
