@@ -27,9 +27,9 @@ tên nhánh yêu cầu Tên_sửa_phần_nào, Eng Vne Jpn đều được,
   - Lần đầu push thì dùng câu lệnh thêm `-u` như dưới<br>
     `git push -u origin <tên nhánh>`
   - những lần khác chỉ cần `git push`
-- Để ý xem nhóm trưởng nhắc pull code như nào, nếu có nhắc pull, trước tiên cần check xem nhánh ở máy tính cá nhân mình có phải nhánh của mình không, rồi thực hiện: `git pull origin main`
+- Để ý xem nhóm trưởng nhắc pull code như nào, nếu có nhắc pull, trước tiên cần check xem nhánh ở máy tính cá nhân mình có phải nhánh của mình (để tránh trường hợp máy cá nhân đang ở nhánh main rồi pull) không, rồi thực hiện: `git pull origin main`
 ## 3. Cách chạy project <div id='run'></div>
-- sau khi git clone về thì phải truy cập vào folder bằng lệnh `cd SoftwareEngineeringIntroduction`
+- sau khi git clone về thì phải truy cập vào folder bằng lệnh `cd SoftwareEngineeringIntroduction`, còn git pull thì thôi ko cần truy cập `cd` nữa
 - chạy tiếp `docker compose build`, đợi progress xong
 - chạy tiếp `docker compose up`, xem chỗ progress ấy xem có lỗi gì ko
   - nếu không có lỗi, thấy server listen port 8080 thì là xong, truy cập vào localhost ở browser để check
