@@ -3,11 +3,16 @@ const router = express.Router();
 
 const HoKhau = require('../../models/hokhau.model');
 
-router.get('/', async(req, res) => {
-    HoKhau.find({}, (err, hoKhaus) => {
-        if (err) return res.json({ err });
-        res.json({ result: hoKhaus });
-    })
-})
+router.get('/', async (req, res) => {
+    try {
+      const hoKhaus = await HoKhau.find({});
+      if (hoKhaus.length === 0) {
+        return res.json({ message: 'Không tìm thấy dữ liệu hộ khẩu.' });
+      }
+      res.json({ result: hoKhaus });
+    } catch (err) {
+      res.json({ err });
+    }
+  });
 
 module.exports = router;
