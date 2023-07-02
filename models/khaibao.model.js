@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const khaiBaoSchema = new mongoose.Schema({
   nhanKhauId: {
-    type: mongoose.Types.ObjectId,
+    // type: mongoose.Types.ObjectId,
+    type: String,
     required: true,
     ref: 'NhanKhau',
     unique: true
