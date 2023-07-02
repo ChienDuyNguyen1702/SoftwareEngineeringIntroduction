@@ -98,6 +98,7 @@ app.use('/ho-khau', hoKhauRoutes);
 app.post('/auth/login', async(req, res) => {
     let { username, password } = req.body;
     // hash password
+    console.log(username, password);
     password = sha256(password);
     let user;
     try {
