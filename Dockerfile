@@ -9,7 +9,7 @@ COPY . /src
 
 EXPOSE 8080
 # run in production environment
-CMD ["node", "index.js"]
+# CMD ["node", "index.js"]
 
 # run in dev environment
-# CMD ["npm" ,"run", "dev"]
+CMD ["npm" ,"run", "dev"]
