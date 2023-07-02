@@ -3,7 +3,7 @@ FROM node:12-alpine
 WORKDIR /src
 COPY package.json /src/
 RUN npm install
-RUN npm i nodemon -g
+# RUN npm i nodemon -g
 
 COPY . /src
 

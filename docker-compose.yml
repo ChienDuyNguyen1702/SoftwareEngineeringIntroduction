@@ -20,15 +20,14 @@ services:
     container_name: mongodb
     image: mongo:6-jammy
     environment:
-      - MONGODB_URL=mongodb://mongodb:27017/ktpm
-      - MONGO_INITDB_ROOT_USERNAME=admin 
-      - MONGO_INITDB_ROOT_PASSWORD=VRuAd2Nvmp4ELHh5 
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=VRuAd2Nvmp4ELHh5
       - MONGO_INITDB_DATABASE=ktpm
     ports:
       - '27017:27017'
     volumes:
       - ./db/:/db
-    # command: mongoimport --host mongodb --authenticationDatabase admin --username admin --password VRuAd2Nvmp4ELHh5 --db ktpm --collection user --file /db/user.json --jsonArray
+    # command: mongoimport --host mongodb --authenticationDatabase admin --username admin --password VRuAd2Nvmp4ELHh5 --db ktpm --collection Users --file ./db/user.json --jsonArray
     # command: bash -c 'for file in /db/*.json; do mongoimport --host mongodb --db ktpm --collection your_collection_name --file "$file" --jsonArray; done'
     networks:
       - node-network

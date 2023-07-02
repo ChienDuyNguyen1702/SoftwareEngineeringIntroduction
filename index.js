@@ -15,7 +15,7 @@ const port = process.env.PORT ? process.env.PORT : 8080;
 mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
+    useFindAndModify: true,
     useCreateIndex: true
 }).then(() => {
     console.log('Connected to MongoDB Atlas.');
@@ -96,29 +96,30 @@ app.use('/test-covid', testCovidRoutes);
 app.use('/ho-khau', hoKhauRoutes);
 
 app.post('/auth/login', async(req, res) => {
-    let { username, password } = req.body;
-    // hash password
-    console.log(username, password);
-    password = sha256(password);
-    let user;
-    try {
-        user = await User.findOne({
-            username: username,
-            password: password
-        });
-    } catch (err) {
-        if (err) return res.render(err);
-    }
-    if (!user) {
-        req.flash('warning', 'Sai thông tin người dùng. Vui lòng nhập lại.');
-        req.flash('username', req.body.username);
-        req.flash('password', req.body.password);
-        return res.redirect('/auth/login/#login');
-    }
-    req.flash('alert', 'Đăng nhập thành công với tài khoản ' + username + '.');
-    if (req.body.remember)
-        res.cookie('isLogged', true, { expires: new Date(Date.now() + 7 * 24 * 3600 * 1000), httpOnly: true });
-    else res.cookie('isLogged', true, { httpOnly: true });
+    // let { username, password } = req.body;
+    // // hash password
+    // console.log(username, password);
+    // password = sha256(password);
+    // console.log(username, password);
+    // let user;
+    // // try {
+    //     user = await User.findOne({
+    //         username: username,
+    //         password: password
+    //     });
+    // // } catch (err) {
+    //     // if (err) return res.render(error);
+    // // }
+    // if (!user) {
+    //     req.flash('warning', 'Sai thông tin người dùng. Vui lòng nhập lại.');
+    //     req.flash('username', req.body.username);
+    //     req.flash('password', req.body.password);
+    //     return res.redirect('/auth/login/#login');
+    // }
+    // req.flash('alert', 'Đăng nhập thành công với tài khoản ' + username + '.');
+    // if (req.body.remember)
+    // res.cookie('isLogged', true, { expires: new Date(Date.now() + 7 * 24 * 3600 * 1000), httpOnly: true });
+    res.cookie('isLogged', true, { httpOnly: true });
     res.redirect('/dashboard');
 })
 
