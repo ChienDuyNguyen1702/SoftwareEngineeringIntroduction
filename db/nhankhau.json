@@ -1,6 +1,6 @@
 [
         
-    {"soCCCD":1080843151,"hoVaTen":"Nguyễn Công Kiệt","hoKhauId":"HK001","namSinh":29428,"soDienThoai":985613368,"Giới tính":"NAM"},
+    {"maNhanKhau":"NK0011","soCCCD":1080843151,"hoVaTen":"Nguyễn Công Kiệt","hoKhauId":"HK001","namSinh":29428,"soDienThoai":985613368,"Giới tính":"NAM"},
     {"soCCCD":1064974873,"hoVaTen":"Nguyễn Khôi Phong","hoKhauId":"HK002","namSinh":23444,"soDienThoai":987716506,"Giới tính":"NAM"},
     {"soCCCD":1077510220,"hoVaTen":"Nguyễn Văn Thành","hoKhauId":"HK003","namSinh":28191,"soDienThoai":987804224,"Giới tính":"NAM","trangThai":"ĐÃ MẤT"},
     {"soCCCD":1030530974,"hoVaTen":"Nguyễn Công Bảo","hoKhauId":"HK004","namSinh":11122,"soDienThoai":984851440,"Giới tính":"NAM","trangThai":"ĐÃ MẤT"},
